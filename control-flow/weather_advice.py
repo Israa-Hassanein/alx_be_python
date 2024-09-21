@@ -1,10 +1,9 @@
-#weather advice task 0
-current_weather = str(input("What's the weather like today? (sunny/rainy/cold): ")).lower()
-if current_weather == "sunny":
+weather = str(input("What's the weather like today? (sunny/rainy/cold): ")).lower()
+if weather == "sunny":
     print("Wear a t-shirt and sunglasses.")
-elif current_weather == "sunny":
+elif weather == "sunny":
     print("Don't forget your umbrella and a raincoat.")
-elif current_weather ==  "cold":
+elif weather ==  "cold":
     print("Make sure to wear a warm coat and a scarf.")
 else:
     print("Sorry, I don't have recommendations for this weather.")
