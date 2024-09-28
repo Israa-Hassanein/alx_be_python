@@ -12,17 +12,14 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            new_item = str(input("Enter the item to add:"))
+            new_item = input("Enter the item to add: ")  # Ensure this matches exactly
             shopping_list.append(new_item)
-            pass
         elif choice == '2':
-            del_item = str(input("Enter an item to be deleted: "))
+            del_item = input("Enter an item to be deleted: ")
             shopping_list.remove(del_item)
-            pass
         elif choice == '3':
             for item in shopping_list:
                 print(item)
-            pass
         elif choice == '4':
             print("Goodbye!")
             break
