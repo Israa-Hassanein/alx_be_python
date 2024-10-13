@@ -1,23 +1,43 @@
 class Calculator:
-    calculation_type = "Arithmetic Operations"
+  """
+  A class for performing simple arithmetic operations.
+  """
+  calculation_type = "Arithmetic Operations"  # Class attribute
 
-    @staticmethod
-    def add(a: float, b: float) -> float:
-        """Static method to add two numbers."""
-        return a + b
+  @staticmethod
+  def add(a, b):
+    """
+    Static method to perform addition of two numbers.
 
-    @classmethod
-    def multiply(cls, a: float, b: float) -> float:
-        """Class method to multiply two numbers."""
-        print(f"Calculation type: {cls.calculation_type}")
-        return a * b
+    Args:
+      a (int): The first number.
+      b (int): The second number.
 
-# Example usage (optional)
+    Returns:
+      int: The sum of a and b.
+    """
+    return a + b
+
+  @classmethod
+  def multiply(cls, a, b):
+    """
+    Class method to perform multiplication of two numbers.
+
+    Args:
+      cls (class): The Calculator class itself.
+      a (int): The first number.
+      b (int): The second number.
+
+    Returns:
+      int: The product of a and b.
+    """
+    print(f"Calculation type: {cls.calculation_type}")
+    return a * b
+
+# Test the Calculator class (optional, can be removed)
 if __name__ == "__main__":
-    # Testing the static method
-    result_add = Calculator.add(5, 3)
-    print(f"Addition result: {result_add}")
+  sum_result = Calculator.add(10, 5)
+  print(f"The sum is: {sum_result}")
 
-    # Testing the class method
-    result_multiply = Calculator.multiply(5, 3)
-    print(f"Multiplication result: {result_multiply}")
+  product_result = Calculator.multiply(10, 5)
+  print(f"The product is: {product_result}")
